@@ -50,8 +50,81 @@ sum = a + b
 print("sum:" , sum ) 
 """
 
+#string methods
+""" 
 
+s = 'My name is Priya Mathur'
+print(s.upper())
+print(s.lower())
+print(s.capitalize())
+print(s.title())
 
+print(s.swapcase())
+print(s.find('Priya'))
+print(s.index('Mathur'))
+print(s.count('a'))
+print(s.replace('Priya', 'Ananya'))
+print(s.startswith('My'))
+print(s.endswith('Mathur'))
+print(s.isalpha())
+print(s.isdigit())
+print(s.isalnum())
+print(s.strip())
+print(s.lstrip())
+print(s.rstrip())
+print(s.split())
+print(s.join(['Hello', 'World']))
+
+"""
+
+#exercise-2 
+"""
+
+# 1. take price of products as input and print the total bill and average price 
+
+p1 = float(input("Enter price of product 1: "))
+p2 = float(input("Enter price of product 2: "))
+p3 = float(input("Enter price of product 3: "))
+total_bill = p1 + p2 + p3
+average_price = total_bill /3 
+print("Total bill : ", total_bill)
+print("Average price : ", average_price)
+
+# 2. take a superhero name as input  and check it start with s / S or not 
+name = input("Enter a superhero name: ")
+print(name.startswith('s') or name.startswith('S'))
+"""
+
+# conditional statements
+"""
+age = int(input("Enter your age: "))
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
+    """
+    
+    # Mini project - 1 (Calculator)
+a = float(input("Enter first number: "))
+select_operation = input("Select operation (+, -, *, /, % , **): ")
+b = float(input("Enter second number: "))
+if select_operation == '+':
+    print("Result: ", a + b)
+elif select_operation == '-':
+    print("Result: ", a - b)
+elif select_operation == '*':
+    print("Result: ", a * b)
+elif select_operation == '/':
+    if b == 0:
+        print("Error: Division by zero is not allowed.")
+    else:
+        print("Result: ", a / b)
+elif select_operation == '%':
+    print("Result: ", a % b)
+elif select_operation == '**':
+    print("Result: ", a ** b)
+else:
+    print("Invalid operation.")
 
 
 
