@@ -105,6 +105,8 @@ else:
     """
     
     # Mini project - 1 (Calculator)
+    
+"""
 a = float(input("Enter first number: "))
 select_operation = input("Select operation (+, -, *, /, % , **): ")
 b = float(input("Enter second number: "))
@@ -125,6 +127,56 @@ elif select_operation == '**':
     print("Result: ", a ** b)
 else:
     print("Invalid operation.")
+
+"""
+
+# range and loops 
+"""
+for i in range(1, 11):
+    print(i)
+    
+while True:
+    num = int(input("Enter a number (0 to exit): "))
+    if num == 0:
+        break
+    print("You entered:", num)
+  
+  # continue statement
+for i in range(1, 11):
+    if i % 2 == 0:
+        continue
+    print(i)  
+"""
+
+# Practice exercise - 4
+# print odd numbers from 1 to 20 
+"""
+for i in range(1, 21, 2):
+    print(i)
+"""
+
+# print table of 57
+"""
+i= 1
+for i in range(1, 11):
+    print("57 x", i, "=", 57 * i)
+"""
+# print all  multiples of 3 from 1 to 50 but skip 15
+"""
+for i in range(1, 51):
+    if i % 3 == 0:
+        if i == 15:
+            continue
+        print(i)
+"""
+# take two integer aas input and find he first number 1 and 1000 is divisible by both numbers 
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+for i in range(1, 1001):
+    if i % a == 0 and i % b == 0:
+        print("First number divisible by both:", i)
+        break
 
 
 
